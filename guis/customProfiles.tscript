@@ -1,0 +1,23 @@
+singleton GuiControlProfile(ScoreBoardProfile : GuiDefaultProfile) {
+    opaque = "1";
+    fillColor = "0 0 0 200";
+    fillColorHL = "0 0 0 200";
+    borderColor = "0 0 0 255";
+    borderThickness = "5";
+    border = "1";
+};
+
+singleton GuiControlProfile(ScoreBoardTextBoldProfile : GuiDefaultProfile) {
+    fontType = "Arial Bold";
+    fontColor = "255 255 255 255";
+};
+
+singleton GuiControlProfile(ScoreBoardTextNormalProfile : GuiDefaultProfile) {
+    fontType = "Arial";
+    fontColor = "255 255 255 255";
+};
+
+singleton GuiControlProfile(ScoreBoardScrollProfile : GuiDefaultProfile) {
+    fontType = "Arial Bold";
+    fontColor = "255 255 255 255";
+};

@@ -145,17 +145,28 @@ namespace CoinCollection.Server {
          }
 
          CoinCollector player = Sim.FindObject<CoinCollector>(playerId);
+         Core.Objects.MissionCleanup.Add(player);
 
-         TransformF spawnTransform = new TransformF("0 0 1 0 0 0 0 0");
-         SpawnSphere sphere = Sim.FindObject<SpawnSphere>("CoinCollectorSpawnSphere");
-         if (sphere != null) {
-            spawnTransform = sphere.GetTransform();
-         }
+         TransformF spawnTransform = new(new TransformF.InternalStruct {
+            position = new Point3F.InternalStruct {
+               x = 0,
+               y = 0,
+               z = 1
+            },
+            orientation = new AngAxisF.InternalStruct {
+               angle = 0,
+               axis = {
+                  x = 0,
+                  y = 0,
+                  z = 0
+               }
+            },
+            hasRotation = false
+         });
 
          player.SetTransform(spawnTransform);
-         player.Client = client;
 
-         Core.Objects.MissionCleanup.Add(player);
+         player.Client = client;
          client.SetControlObject(player);
          client.Player = player;
 

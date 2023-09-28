@@ -1,0 +1,7 @@
+datablock PlayerData( CoinCollectorPlayer ) {
+    // Third person shape
+    ShapeAsset = "Prototyping:Playerbot_shape";
+
+    // Set distance from camera to player
+    cameraMaxDist = 3.0;
+} ;

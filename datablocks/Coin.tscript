@@ -1,0 +1,4 @@
+datablock StaticShapeData( Coin ) {
+    ShapeAsset = "Prototyping:TorusPrimitive_shape";
+    category = "CoinCollectionObjects";
+} ;

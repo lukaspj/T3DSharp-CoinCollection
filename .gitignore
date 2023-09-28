@@ -1,2 +1,4 @@
 *.csproj
 *.cached.dts
+scripts/bin
+scripts/obj

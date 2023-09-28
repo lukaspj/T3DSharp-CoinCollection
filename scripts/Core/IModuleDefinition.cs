@@ -53,7 +53,7 @@ namespace CoinCollection.Core {
       /// onServerCreated(), it loads the datablocks via this array, and when when the server goes
       /// to pass data to the client, it iterates over this list and processes it, ensuring all datablocks
       /// are the most up to date possible for transmission to the connecting client
-      /// %this.registerDatablock("./datablocks/ExampleDatablock.ts");
+      /// %this.registerDatablock("./datablocks/ExampleDatablock.tscript");
       /// </summary>
       void OnCreateGameServer();
 
@@ -64,7 +64,7 @@ namespace CoinCollection.Core {
       // onServerCreated(), it loads the datablocks via this array, and when when the server goes
       // to pass data to the client, it iterates over this list and processes it, ensuring all datablocks
       // are the most up to date possible for transmission to the connecting client
-      // %this.registerDatablock("./datablocks/ExampleDatablock.ts");
+      // %this.registerDatablock("./datablocks/ExampleDatablock.tscript");
 
       /// <summary>
       /// This is called when a game session server is destroyed, when the game shuts down. It's called from

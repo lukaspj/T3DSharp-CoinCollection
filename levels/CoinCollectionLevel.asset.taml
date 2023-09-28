@@ -1,11 +1,10 @@
 <LevelAsset
-    canSave="true"
-    canSaveDynamicFields="true"
     AssetName="CoinCollectionLevel"
     LevelFile="@assetFile=CoinCollectionLevel.mis"
     LevelName="CoinCollection Level"
-    isSubScene="false"
+    PostFXPresetFile="@assetFile=data/T3DSharp-CoinCollection/levels/CoinCollectionLevel.postfxpreset.tscript"
     description="An CoinCollection level asset"
+    staticObjectAssetDependency0="@asset=Prototyping:FloorGray"
     VersionId="1"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../../../taml_schema.xml" />
+    xsi:noNamespaceSchemaLocation="../../../../taml_schema.xml"/>

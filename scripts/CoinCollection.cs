@@ -20,15 +20,15 @@ namespace CoinCollection {
       }
 
       public void OnCreateGameServer() {
-         Call("registerDatablock", "./datablocks/Coin.ts");
-         Call("registerDatablock", "./datablocks/Particles.ts");
-         Call("registerDatablock", "./datablocks/Player.ts");
+         Call("registerDatablock", "./datablocks/Coin.tscript");
+         Call("registerDatablock", "./datablocks/Particles.tscript");
+         Call("registerDatablock", "./datablocks/Player.tscript");
       }
 
       public void OnDestroyGameServer() { }
 
       public void InitClient() {
-         Call("queueExec", "./guis/customProfiles.ts");
+         Call("queueExec", "./guis/customProfiles.tscript");
          Call("queueExec", "./guis/scoreboard.gui");
          ScoreBoardGUI.Init();
       }
@@ -40,8 +40,8 @@ namespace CoinCollection {
          Core.Objects.GlobalActionMap.Bind("keyboard", "tilde", "toggleConsole");
 
          string prefPath = Global.GetPrefsPath();
-         if (Global.IsFile(prefPath + "/keybinds.ts"))
-            Global.Exec(prefPath + "/keybinds.ts");
+         if (Global.IsFile(prefPath + "/keybinds.tscript"))
+            Global.Exec(prefPath + "/keybinds.tscript");
       }
 
       public void OnDestroyClientConnection() { }
