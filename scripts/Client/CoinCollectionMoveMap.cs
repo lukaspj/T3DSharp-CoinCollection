@@ -44,6 +44,7 @@ namespace CoinCollection.Client {
          RemapKeyboard("Strafe Left", "MoveLeft", "Left Strafing Movement");
          RemapKeyboard("Strafe Right", "MoveRight", "Right Strafing Movement");
          RemapKeyboard("Jump", "Jump", "Jump");
+         RemapKeyboard("Show Scoreboard", "ShowScoreBoard", "Show Score Board");
 
          if (Global.IsObject("CoinCollectionMoveMap")) {
             Sim.FindObject<ActionMap>("CoinCollectionMoveMap").Delete();
